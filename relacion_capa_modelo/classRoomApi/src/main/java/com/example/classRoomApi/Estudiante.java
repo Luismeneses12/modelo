@@ -10,7 +10,7 @@ import java.util.List;
 public class Estudiante {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Integer ID_estuduante;
+    private Integer Id_estuduante;
     @Column(name="Grado")
     private Integer Grado;
     @Column(name="Fecha_nacimiento")
@@ -39,8 +39,8 @@ public class Estudiante {
     public Estudiante() {
     }
 
-    public Estudiante(Integer ID_estuduante, Integer grado, LocalTime fecha_nacimiento, String direccion) {
-        this.ID_estuduante = ID_estuduante;
+    public Estudiante(Integer Id_estuduante, Integer grado, LocalTime fecha_nacimiento, String direccion) {
+        this.Id_estuduante = Id_estuduante;
         Grado = grado;
         Fecha_nacimiento = fecha_nacimiento;
         Direccion = direccion;
@@ -48,7 +48,7 @@ public class Estudiante {
     // este bloque d ecpdigo se hace los get y los set para acceder a los datos
 
     public Integer getID_estuduante() {
-        return ID_estuduante;
+        return Id_estuduante;
     }
 
     public Integer getGrado() {
@@ -63,8 +63,8 @@ public class Estudiante {
         return Direccion;
     }
 
-    public void setID_estuduante(Integer ID_estuduante) {
-        this.ID_estuduante = ID_estuduante;
+    public void setID_estuduante(Integer Id_estuduante) {
+        this.Id_estuduante = Id_estuduante;
     }
 
     public void setGrado(Integer grado) {

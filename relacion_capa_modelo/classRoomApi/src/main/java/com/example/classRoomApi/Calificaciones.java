@@ -24,7 +24,55 @@ public class Calificaciones {
     private Materia materia;
     // construtor
 
+    public Calificaciones() {
+    }
+
+    public Calificaciones(Integer id_calificaciones, Float notas, LocalTime fecha_evaluacion, Estudiante estudiante) {
+        Id_calificaciones = id_calificaciones;
+        this.notas = notas;
+        Fecha_evaluacion = fecha_evaluacion;
+        this.estudiante = estudiante;
+    }
     //get y set/
 
 
+    public Integer getId_calificaciones() {
+        return Id_calificaciones;
+    }
+
+    public void setId_calificaciones(Integer id_calificaciones) {
+        Id_calificaciones = id_calificaciones;
+    }
+
+    public Float getNotas() {
+        return notas;
+    }
+
+    public void setNotas(Float notas) {
+        this.notas = notas;
+    }
+
+    public LocalTime getFecha_evaluacion() {
+        return Fecha_evaluacion;
+    }
+
+    public void setFecha_evaluacion(LocalTime fecha_evaluacion) {
+        Fecha_evaluacion = fecha_evaluacion;
+    }
+
+    public Estudiante getEstudiante() {
+        return estudiante;
+    }
+
+    public void setEstudiante(Estudiante estudiante) {
+        this.estudiante = estudiante;
+    }
+
+    public Materia getMateria() {
+        return materia;
+    }
+
+    public void setMateria(Materia materia) {
+        this.materia = materia;
+    }
 }

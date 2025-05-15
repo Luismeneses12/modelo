@@ -11,7 +11,7 @@ public class Asistencia {
     // variables clase y cloumnas db
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Integer ID_asistencia;
+    private Integer Id_asistencia;
     @Column(name="Fecha_asistencia",nullable=false)
     private LocalTime Fecha_asistenmcia;
     @Column(name="estado",nullable=false)
@@ -31,8 +31,8 @@ public class Asistencia {
     public Asistencia() {
     }
 
-    public Asistencia(Integer ID_asistencia, LocalTime fecha_asistenmcia, Tipo_usuario estado, Curso curso) {
-        this.ID_asistencia = ID_asistencia;
+    public Asistencia(Integer Id_asistencia, LocalTime fecha_asistenmcia, Tipo_usuario estado, Curso curso) {
+        this.Id_asistencia = Id_asistencia;
         Fecha_asistenmcia = fecha_asistenmcia;
         this.estado = estado;
         this.curso = curso;
@@ -41,7 +41,7 @@ public class Asistencia {
 
 
     public Integer getID_asistencia() {
-        return ID_asistencia;
+        return Id_asistencia;
     }
 
     public LocalTime getFecha_asistenmcia() {
@@ -56,8 +56,8 @@ public class Asistencia {
         return curso;
     }
 
-    public void setID_asistencia(Integer ID_asistencia) {
-        this.ID_asistencia = ID_asistencia;
+    public void setID_asistencia(Integer Id_asistencia) {
+        this.Id_asistencia = Id_asistencia;
     }
 
     public void setFecha_asistenmcia(LocalTime fecha_asistenmcia) {

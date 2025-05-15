@@ -11,8 +11,8 @@ public class  Usuario {
     // atributos para la base dse datos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="ID_usuario")
-    private Integer ID_usuario;
+    @Column(name="Id_usuario")
+    private Integer Id_usuario;
     @Column(name="nombre",length=100,unique=false)
     private String nombre;
     @Column(name="cooreo_eletronico",length=100,nullable=false)
@@ -34,8 +34,8 @@ private Docentes docente;
     public Usuario() {
     }
 
-    public Usuario(Integer ID_usuario, String nombre, String correo_eletronico, String contrasena, String telefono, Tipo_usuario tipo_usuario) {
-        this.ID_usuario = ID_usuario;
+    public Usuario(Integer Id_usuario, String nombre, String correo_eletronico, String contrasena, String telefono, Tipo_usuario tipo_usuario) {
+        this.Id_usuario = Id_usuario;
         this.nombre = nombre;
         this.correo_eletronico = correo_eletronico;
         this.contrasena = contrasena;
@@ -45,7 +45,7 @@ private Docentes docente;
     //  metodos set y get para para acceder a la informacion
 
     public Integer getID_usuario() {
-        return ID_usuario;
+        return Id_usuario;
     }
 
     public String getNombre() {
@@ -68,8 +68,8 @@ private Docentes docente;
         return tipo_usuario;
     }
 
-    public void setID_usuario(Integer ID_usuario) {
-        this.ID_usuario = ID_usuario;
+    public void setID_usuario(Integer Id_usuario) {
+        this.Id_usuario = Id_usuario;
     }
 
     public void setNombre(String nombre) {
